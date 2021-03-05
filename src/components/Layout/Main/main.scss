@@ -1,0 +1,281 @@
+.Main {
+  padding-top: 100px;
+  @media (min-width:1025px) {
+    padding-top: 215px;
+  }
+  &__header {
+    padding-left: 40px;
+    @media (min-width:1025px) {
+      padding-left: 140px;
+    }
+
+    &_success {
+      margin-left: 140px;
+    }
+    &_img {
+      margin-bottom: 33px;
+    }
+
+    &_title{
+      font-style: normal;
+      font-weight: normal;
+      font-family: Georgia, serif;
+      font-size: 24px;
+
+      @media (min-width:1025px) {
+        font-size: 32px;
+      }
+    }
+
+    &_text {
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-family: Arial, serif;
+      font-size: 14px;
+      width: 300px;
+      line-height: 28px;
+
+      @media (min-width:1025px) {
+        font-size: 16px;
+        width: 400px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display:flex;
+    flex-direction:row;
+
+    @media (min-width:1025px) {
+      margin-top: 49px;
+      font-size: 16px;
+      margin-left: 100px;
+    }
+
+    &_inputWrapper{
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:hover .Main__form_input {
+        border: 1px solid #4066A5;
+        border-left: 4px solid #4066A5;
+        box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+      }
+
+      &:hover input[type="submit"]{
+        background: url("images/ic_arrow_blue.svg") no-repeat scroll 31% white;
+        border: 1px solid #4066A5;
+        border-left: none;
+        box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+      }
+    }
+
+    &_input {
+
+      width: 285px;
+      height: 67px;
+      padding: 1px 0 1px 15px;
+      border: 1px solid #E3E3E4;
+      border-left: 4px solid #4066A5;
+      outline: none;
+      transition: 0.3s ease;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (min-width:1025px) {
+        width: 575px;
+        padding: 1px 41px;
+      }
+
+      &::placeholder {
+        font-size: 16px;
+      }
+
+    }
+
+    &_checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+
+      @media (min-width:1025px) {
+        margin-left: 42px;
+      }
+
+      &-text {
+        margin-top: 5px;
+        margin-left: 5px;
+
+        a {
+         color:black
+        }
+      }
+    }
+
+    input[type="submit"] {
+     position: absolute;
+      right: 0;
+      width: 55px;
+      height: 71px;
+      border: 1px solid #E3E3E4;
+      border-left: 0;
+      text-align: center;
+      z-index: 1;
+      background: url("images/ic_arrow.svg") no-repeat scroll 31% white;
+      outline: 0;
+      transition: 0.3s ease;
+
+      @media (min-width:1025px) {
+        width: 80px;
+      }
+
+      &:hover {
+        background: url("images/ic_arrow_blue.svg") no-repeat scroll 31% white;
+        border: 1px solid #4066A5;
+        border-left: 0;
+      }
+
+
+
+    }
+  }
+  a {
+    color:black;
+    text-decoration: underline;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #4066A5
+    }
+
+    &:active {
+      color: #233759
+    }
+  }
+
+  &__divider {
+    width: 320px;
+    color: #E3E3E4;
+    margin: 52px auto auto;
+
+    @media (min-width:1025px) {
+      width: 400px;
+    }
+  }
+
+  &__socialMedia {
+ margin-top: 50px;
+
+    &_list {
+      display:flex;
+      justify-content: space-evenly;
+      padding: 0 19%;
+
+      @media (min-width:1025px) {
+        padding: 0 29%;
+      }
+
+
+      &-item {
+        &-facebook {
+          &:hover {
+            svg {
+              fill: #4267B2;
+              filter: drop-shadow( 0px 20px 40px rgba(19, 24, 33, 0.3));
+              cursor: pointer;
+
+              path {
+                fill: white;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        &-instagram {
+
+          &:hover {
+            svg {
+              fill: #C13584;
+              cursor: pointer;
+
+              path {
+                fill: white;
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &-twitter {
+
+          &:hover {
+            svg {
+              fill: #1DA1F2;
+              cursor: pointer;
+
+              path {
+                fill: white;
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &-youtube {
+
+          &:hover {
+            svg {
+              fill: #FF0000;
+              cursor: pointer;
+
+              path {
+                fill: white;
+                opacity: 1;
+              }
+            }
+          }
+        }
+    }
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E3E3E4;
+    border-radius: 3px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+}
+
+.custom-checkbox:checked+label::before {
+  background-color: #4066A5;
+  background-image: url("images/ic_checkmark.svg");
+}
+}
+
+.success {
+  padding-top: 108px;
+}

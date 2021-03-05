@@ -1,0 +1,32 @@
+.Layout {
+  display: grid;
+  gap: 0 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  grid-template-areas:
+    "header"
+    "form";
+  overflow: hidden;
+
+  @media (min-width:1025px) {
+    grid-template-columns: 680px 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    grid-template-areas:
+    "header content"
+    "form content";
+  }
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__main {
+      grid-area: form;
+      z-index: 1;
+    }
+
+  &__content {
+    grid-area: content;
+  }
+
+}
