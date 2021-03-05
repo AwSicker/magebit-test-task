@@ -67,6 +67,7 @@ export const Main = () => {
 
   return (
     <div className={`${!success ? `Main` : `success`}`}>
+      <div className="Main__wrapper">
       {!success ? (
         <div className="Main__header">
           <p className="Main__header_title">Subscribe to newsletter</p>
@@ -138,6 +139,7 @@ export const Main = () => {
           })}
         </ul>
       </div>
+    </div>
     </div>
   );
 };

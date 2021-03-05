@@ -1,5 +1,5 @@
 {
-  "name": "magebit-task",
+  "name": "magebit-test-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -46,3 +46,4 @@
     "prettier": "2.2.1"
   }
 }
+
