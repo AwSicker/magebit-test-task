@@ -13,6 +13,7 @@ export const Pagination = ({ emailsPerPage, emails, paginate }) => {
         {pageNumbers.map((number) => {
           return (
             <li key={number}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className="Pagination__number"
                 onClick={() => paginate(number)}
