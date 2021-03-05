@@ -4,7 +4,7 @@ import Logo_1 from "./images/logo_pineapple.png";
 import Logo_2 from "./images/logo_pineapple2.png";
 import "./header.scss";
 import { headerItems } from "./headerItems";
-import useMediaQuery from "react-responsive";
+import {useMediaQuery} from "react-responsive";
 
 export const Header = () => {
   const isDesktopOrLaptop = useMediaQuery({
