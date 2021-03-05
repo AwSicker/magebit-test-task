@@ -1,16 +1,42 @@
 .Main {
-  padding-top: 100px;
-  @media (min-width:1025px) {
+  padding-top: 200px;
+
+  @media (min-width:480px) {
     padding-top: 215px;
   }
+
+  &__wrapper {
+    width: 335px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+
+    @media (min-width:480px) {
+      width: auto;
+      height: auto;
+      margin:0;
+      padding: 0;
+      background: none;
+    }
+  }
+
   &__header {
-    padding-left: 40px;
-    @media (min-width:1025px) {
+    padding-left: 20px;
+    @media (min-width:480px) {
       padding-left: 140px;
     }
 
     &_success {
-      margin-left: 140px;
+      margin-left: 18px;
+      margin-bottom: 35px;
+
+      @media (min-width:480px) {
+        margin-left: 140px;
+        margin-bottom: 0;
+      }
+
     }
     &_img {
       margin-bottom: 33px;
@@ -22,13 +48,13 @@
       font-family: Georgia, serif;
       font-size: 24px;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
         font-size: 32px;
       }
     }
 
     &_text {
-      margin-top: 20px;
+      margin-top: 15px;
       font-style: normal;
       font-weight: normal;
       font-family: Arial, serif;
@@ -36,7 +62,8 @@
       width: 300px;
       line-height: 28px;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
+        margin-top: 20px;
         font-size: 16px;
         width: 400px;
       }
@@ -45,12 +72,12 @@
 
   &__form {
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     display:flex;
     flex-direction:row;
 
-    @media (min-width:1025px) {
+    @media (min-width:480px) {
       margin-top: 49px;
       font-size: 16px;
       margin-left: 100px;
@@ -76,9 +103,8 @@
     }
 
     &_input {
-
       width: 285px;
-      height: 67px;
+      height: 60px;
       padding: 1px 0 1px 15px;
       border: 1px solid #E3E3E4;
       border-left: 4px solid #4066A5;
@@ -87,9 +113,10 @@
       font-size: 16px;
       line-height: 24px;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
         width: 575px;
         padding: 1px 41px;
+        height: 67px;
       }
 
       &::placeholder {
@@ -101,10 +128,12 @@
     &_checkbox {
       display: flex;
       align-items: center;
-      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-top: 16px;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
         margin-left: 42px;
+        margin-top: 50px;
       }
 
       &-text {
@@ -121,7 +150,7 @@
      position: absolute;
       right: 0;
       width: 55px;
-      height: 71px;
+      height: 64px;
       border: 1px solid #E3E3E4;
       border-left: 0;
       text-align: center;
@@ -130,8 +159,9 @@
       outline: 0;
       transition: 0.3s ease;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
         width: 80px;
+        height: 71px;
       }
 
       &:hover {
@@ -139,9 +169,6 @@
         border: 1px solid #4066A5;
         border-left: 0;
       }
-
-
-
     }
   }
   a {
@@ -159,24 +186,28 @@
   }
 
   &__divider {
-    width: 320px;
+    width: 292px;
     color: #E3E3E4;
-    margin: 52px auto auto;
+    margin: 10px auto auto;
 
-    @media (min-width:1025px) {
+    @media (min-width:480px) {
       width: 400px;
+      margin: 52px auto auto;
     }
   }
 
   &__socialMedia {
- margin-top: 50px;
+    margin-top: 20px;
+    @media (min-width:480px) {
+      margin-top: 50px;
+    }
 
     &_list {
       display:flex;
       justify-content: space-evenly;
-      padding: 0 19%;
+      padding: 0 10%;
 
-      @media (min-width:1025px) {
+      @media (min-width:480px) {
         padding: 0 29%;
       }
 
@@ -277,5 +308,8 @@
 }
 
 .success {
-  padding-top: 108px;
+  padding-top: 205px;
+  @media (min-width:480px) {
+    padding-top: 108px;
+  }
 }
